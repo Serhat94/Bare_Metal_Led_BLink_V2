@@ -6,7 +6,7 @@ LED lighting and extinguishing application via Uart. Pin Library was specially c
 
 ![image](https://github.com/user-attachments/assets/5bf27687-cbf6-4cfc-995a-d88ba425786e)
 
-**Parity Bit** \n
+**Parity Bit** '\n'
 Parity bit allows the receiver to check the correctness of the received data. Parity is a low–level error checking mechanism and has two different options to choose from: Even Parity and Odd Parity. After the receiver UART reads the data frame, it counts the number of bits with a value of 1 and checks if the total value is an even or odd number. If the parity bit is a 0 (even parity), the number of bits with a value of 1 in the data frame should sum-up to an even number. If the parity bit is a 1 (odd parity), the number of bits with a value of 0 in the data frame should sum-up to an odd number. When the parity bit matches the data, the receiver UART knows that the transmission was a success. Frankly speaking, the parity bit is optional and it’s actually not widely used.
 
 
